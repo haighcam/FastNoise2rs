@@ -1,0 +1,13 @@
+[package]
+name = "fastnoise"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lazy_static = "1.4.0"
+image = "0.24.5"
+
+[build-dependencies]
+bindgen = "0.63.0"
