@@ -4,7 +4,7 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
-    println!("cargo:rustc-link-search=FastNoise2/lib");
+    println!("cargo:rustc-link-search={}/FastNoise2/lib", env::var("CARGO_MANIFEST_DIR").unwrap());
     println!("cargo:rustc-link-lib=FastNoise");
     println!("cargo:rerun-if-changed=wrapper.h");
     
